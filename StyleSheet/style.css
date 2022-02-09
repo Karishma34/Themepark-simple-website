@@ -1,0 +1,695 @@
+/*home page---------------------*/
+/*body {font-family: Arial, Helvetica, sans-serif;}*/
+c
+.slides {display: none;}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+.test {
+    max-height: 500px;
+    min-height: 500px;
+    min-width: 1000px;
+    max-width: 1000px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.column {
+    float: left;
+    width: 25%;
+    margin: 2%;
+    padding: 10px;
+    height: 500px;
+    border-style: solid;
+    }
+.row {
+    content:"";
+    display:flex;
+    clear: both;
+    }
+.bottom {
+    padding: 10px;
+    height: 200px;
+    margin: 1px
+    
+    }
+.left {
+  width: 70%;
+    float: left;
+}
+
+.right {
+  float: right;
+}
+#imageblock {
+  width: 100%;
+  height: 500px;
+  border: hidden #c3c3c3;
+  display: flex;
+  justify-content: center;
+}
+
+#imageblock div {
+  width: 900px;
+  height: 500px;
+  margin: 50px;
+}
+
+.text {
+    float: left;
+    width: 90%;
+    margin: 3%;
+    padding: 10px;
+    height: 250px;
+    border-style: solid;
+    background: white;
+    
+    }
+
+/*Attractions Page-----------*/ 
+body{
+    font-family: 'Metal Mania', cursive;
+	background: beige;
+}
+img{
+    border: 5px solid lightblue;
+    align-content: center;
+}
+nav{
+    border-color:yellow;
+    border-style:dotted;
+    border-radius: 5px;
+    padding: 2px;
+}
+#map
+{
+    width: 1000px;
+    padding: 10px;
+    position:relative;
+}
+
+#center
+{
+    text-align:center;
+}
+
+.picleft
+{
+    padding: 10px;
+    /*float:left;*/
+    margin-left: 100px;
+    left: 100px;
+    width:500px;
+    height:500px;
+    display:inline-block;
+}
+.picright
+{
+    padding: 10px;
+    float:right;
+    width:500px;
+    height:500px;
+}
+
+.textleft
+{
+    padding: 10px;
+    margin-left: 100px;
+    left: 100px;
+    width:500px;
+    height:200px;
+    display:inline-block;
+}
+
+.textright
+{
+    padding: 10px;
+    float:right;
+    width:500px;
+    height:200px;
+}
+
+.pins
+{
+    position:absolute;
+    top: 150px;
+    left:500px;
+    width: 50px;
+    height:50px;
+    z-index: 1;
+    border: 0;
+}
+
+#pin1
+{
+    position:absolute;
+    top: 150px;
+    left:500px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border: 0;
+}
+
+#pin2
+{
+    position:absolute;
+    top: 150px;
+    left: 1040px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border: 0;
+}
+
+#pin3
+{
+    position:absolute;
+    top: 480px;
+    left: 980px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border: 0;
+}
+
+#pin1:hover
+{
+    border:2px solid red;
+}
+
+#pin2:hover
+{
+    border:2px solid red;
+}
+
+#pin3:hover
+{
+    border:2px solid red;
+}
+/*Shopping*/
+/*#Items { 
+	display: flex;
+}*/
+
+
+.ShopLogo {
+	width: 30px;
+	height: 30px;
+	/*margin-left: 10px;*/
+}
+
+#GiftShop { grid-area: giftshop; }
+
+#GiftShop {
+	border: 3px solid black;
+	/*margin-top: 5px;*/
+	/*width: 40%;*/
+	/*float: left;*/
+}
+
+#BestSeller { grid-area: bestseller; }
+
+#BestSeller {
+	border: 3px solid black;
+	/*margin-top: 5px;*/
+	/*width: 50%;*/
+}
+
+#shows {grid-area: shows; }
+
+.toy {
+	width: 130px;
+	max-height: 100%;
+	/*margin-left: 10px;*/
+}
+
+#bank { grid-area: bank; }
+
+.banks {
+	max-height: 100%;
+	width: 50px;
+}
+
+.all {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+		'nav nav'
+		'giftshop bestseller'
+		'shows shows'
+		'bank bank'
+	;
+	margin-left: 50px;
+}
+/*--dining page----------------*/
+nav{
+    border-style:dotted;
+    border-color:yellow;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+    background:white;
+    
+}
+
+div class{
+   border-style:dotted;
+    border-color:yellow;
+    padding: 2px;
+    border-radius:5px;
+}
+.attractionsthemedrestaurants{
+    border-style:dotted;
+    border-color:yellow;
+    border-radius:5px;
+    font-family:cursive;
+    font-size: 20px;
+    
+}
+select,h7{
+    border-style:dotted;
+    border-color:yellow;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+}
+table,td,th {
+border-style:dotted;
+border-color:yellow;
+border-radius: 5px;
+color: white;
+padding: 2px;
+text-align:center;
+}
+.promotions{
+    
+    
+    font-family:cursive;
+    width:25%;
+    align-content:center;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    display: block;
+    color:white
+    
+	
+}
+.Contactdetails{
+   
+    color: navy;
+    font-family:cursive;
+    width:25%;
+    align-content:center;
+    position: absolute;
+    top: 440px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    color:white;
+   
+    
+}
+
+
+
+/*--Booking Page----------------------*/
+body{
+    
+}
+
+.rollercoaster{
+    float: right;
+    margin-top: 500px;
+    margin-right: 100px;
+    border: none;
+    
+}
+    
+.tickets {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 5px;
+  background-color: rgb(0, 139, 139,0);
+  padding: 5px;
+  margin-right: 600px;
+  margin-left: 10px;
+}
+
+.tickets > div {
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 15px ;
+  font-size: 30px;
+  border: 2px dotted yellow;
+}
+
+.bptotalcost {
+    margin-left: 10px
+}
+
+
+.button {
+  background-color: rgb(47,79,79);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  
+  cursor: pointer;
+}
+
+
+ul {list-style-type: none;}
+
+
+.calendar {
+    float: right;
+    margin-top: 22px;
+    margin-right: -470px;
+}
+
+.month {
+  padding: 50px 0;
+  width: 100%;
+  background: #696969;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.month ul li {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+  border: none;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  border: none;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.6%;
+  text-align: center;
+  margin-bottom: 7px;
+  font-size:12px;
+  color: #777;
+}
+
+
+    
+
+}
+/*--Employee's Page/Login Page------*/
+
+header
+{
+    background: darkcyan;
+    border-radius: 5px;
+    text-align:center;
+    width:99%;
+    height:75px;
+    padding:10px;
+}
+
+table
+{
+    table-layout: fixed ;
+    border: 2px solid black;
+    width:800px;
+    height:500px;
+    float:left;
+    border-collapse: collapse;
+
+}
+
+#MandY
+{
+    text-align: center;
+}
+
+tr
+{
+    height: 20px;
+}
+
+td
+{
+    color:black;
+    width:120px;
+    height:50px;
+    padding:5px;
+}
+
+th
+{
+    font-size:90%;
+    font-family: georgia;
+    padding:15px;
+}
+tr,th,td
+{
+    border:1px solid black;
+}
+
+#daysrow
+{
+    vertical-align: top;
+    text-align: left;
+}
+
+#Addinfo
+{
+    float:right;
+    padding:10px;
+    margin: 25px;
+    border:1px solid black;
+    width:300px;
+    height:400px;
+}
+#navlogout
+{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    float:right;
+    padding:10px;
+}
+
+#navlogo
+{
+    float:left;
+    padding:10px;
+}
+
+footer
+{
+    background:violet;
+    color:indigo;
+    position:absolute;
+    bottom:0;
+    height:120px;
+    width:99%;
+}
+
+#socials
+{
+    float:left;
+    padding:5px;
+    font-size:16px;
+    right:20px;
+}
+
+#address
+{
+    float:right;
+    padding:50px;
+    font-size:20px;
+    color:white;
+}
+
+#left
+{
+    float:left;
+    padding:12px;
+    font-size:14px;
+}
+
+.links
+{
+    float:right;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+}
+
+#home
+{
+    float:left;
+    padding:12px;
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+}
+
+#form
+{
+    font-size:18px;
+    padding:10px;
+}
+
+/*GENERAL-IDS*/
+
+nav{
+    border-style:dotted;
+    border-color:yellow;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: Monospace;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    grid-area: nav;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    background-color: white;
+    top: 0;
+}
+nav a:hover{
+    color:aqua;
+}
+    
+body{
+    font-family: 'Metal Mania', cursive;
+    background: beige;
+    border-style:hidden;
+    border-radius: 5px;
+    background-image:linear-gradient(to right, rgba(255,0,255, 0.44), rgba(0, 0, 128,0.95));
+    align-content:center;
+    margin-top: 5px;
+    margin-left: inherit;
+    //width:80%   
+}
+img{
+    border-style:dotted;
+    border-color:yellow;
+    align-content: center;
+    border-radius: 5px;
+    padding:2px;
+}
+h1{
+    border:hidden;
+     padding: 5px;
+    font-family: monospace;
+}
+ul{
+    border-style: dotted;
+    border-color:yellow;
+    border-radius: 10px;
+    font-family:cursive;
+}
+p{
+    font-family: Cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 17px;;
+    color: white;
+ 
+}
+h2{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 25px;;
+    color: white;
+}
+h3{
+    border-style:dotted;
+    border-color:yellow;
+    font-family:fantasy;
+    padding: 2px;
+    border-radius: 5px
+}
+
+.promotional:visited {
+        color: white;
+
+
+
+
+
+
+

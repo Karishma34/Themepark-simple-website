@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Attractions</title>
+    <meta http-equiv = "refresh" content = "120">
+    <meta charset = "UTF-8">
+    <meta name = "author" content = "ThemePark Coordinator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Theme Park">
+    <meta name = "keywords" content = "Family theme park available ">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    <script src="https://kit.fontawesome.com/404576dba9.js" crossorigin="anonymous"></script>
+<body>
+<nav>
+ <a href="index.html"><i class="fas fa-dungeon"></i>Home</a>
+	<select>
+		<option value ="English">English</option>
+		<option value ="Malay">Malay</option>
+		<option value ="Chinese">Chinese</option>
+		<option value ="Tamil">Tamil</option>
+	</select>
+	<input type="text" name="">
+	<button><i class="fas fa-search"></i></button>
+    <a href="attractions.html"><i class="fas fa-dharmachakra"></i>ATTRACTIONS</a>
+	<a href="shopping.html"><i class="fas fa-gift"></i>SHOPPING</a>
+	<a href="dining.html"><i class="fas fa-utensils"></i>DINING</a>
+	<a href="login.html"><i class="fas fa-user-friends"></i>EMPLOYEE'S PAGE</a>
+	<a href="booking%20page.html"><i class="fas fa-ticket-alt"></i>BOOKING</a>
+    </nav>
+    
+<br>
+<!--slideshow-->
+<div style="margin-top: 50px;" class="slideshow-container">
+    <div class="slides fade">
+    <img src="Images/image%201.jpg" class="test">
+    </div>
+    <div class="slides fade">
+    <img src="Images/image%202.jpg" class="test">
+    </div>
+    <div class="slides fade">
+    <img src="Images/image%203.jpg" class="test">
+    </div>
+    
+    </div>
+    <br>
+    <div style="text-align:center">
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+</div>
+    
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 10 seconds
+}
+</script>
+
+<br>
+<!--text boxesbelow slideshow-->
+<div class="text">
+    <img src="Images/rollercoaster2.jpg" width="300" height="200" style="float: left">
+    <h1>Thrilling Fun!!!</h1>
+    <a>Enjoy our brand new rollercoaster with 4D effects and 360s. Get a kick of its spins and turns.</a>
+    <br>
+    <a href="attractions.html#Future">learn more...</a>
+    </div>
+<div class="text">
+    <img src="Images/pikachu-1207146_1280-980x620.jpg" width="300" height="200" style="float: left">
+    <h1>Exciting gifts</h1>
+    <a>check out our large array of gifts at out gift shops and limited time sales</a>
+    <br>
+    <a href="shopping.html">learn more...</a>
+    </div>
+<div class="text">
+    <img src="Images/Retro%20themed%20restaurtant%20setup.jpg" width="300" height="200" style="float: left">
+    <h1>Theme Cafes</h1>
+    <a>Enjoy the various foods from our many available themed cafes!</a>
+    <br>
+    <a href="dining.html">learn more...</a>
+    </div>
+ <!--image blocks-->   
+<div id="imageblock">
+  <div>
+      <br>
+      <img src="Images/family themepark.jpg" width="200" height="200">
+      <h1 style="color: white">Promotions</h1>
+      <p>take advantage of our many promotions and offers for an enjoyable time</p>
+      <br>
+      <a href="booking%20page.html" style="color: white">learn more...</a>
+    </div>
+  <div>
+    <br>
+      <img src="Images/dog.jpg" width="200" height="200">
+      <h1 style="color: white">It's Back!!!</h1>
+      <p>The popular automated robodog is back on our shelves again! Get 1 before they run out!</p>
+      <br>
+      <a href="shopping.html" style="color: white">learn more...</a></div>
+  <div>
+    <br>
+      <img src="Images/Retreo%20themed%20VR.jpg" width="200" height="200">
+      <h1 style="color: white">The future</h1>
+      <p>Enjoy a taste of the future with out many simulation and 4d rides</p>
+      <br>
+      <a href="attractions.html" style="color: white">learn more...</a>
+    </div>
+</div>
+    
+<!--bottom-->
+<div class="row">
+    <div  class="bottom left">
+    <h1>Follow us on</h1>
+    <a href="https://www.instagram.com/"><img src="Images/Instagram_AppIcon.png" width="50" height="50"></a>
+    <a href="https://twitter.com/home"><img src="Images/Twitter-featured.png" width="50" height="50"></a>
+    <a href="https://www.facebook.com/"><img src="Images/fb%20icon2.jpg" width="50" height="50" ></a>
+    </div>
+    <div class="bottom right">
+    <h2>Address</h2>
+    <p>27 LegendNoobmaster street 69</p>
+        <p>Singapore 69900027</p>
+        <a href="https://www.google.com/maps/place/Bermuda+Triangle/@24.9999986,-71.0175096,14z/data=!3m1!4b1!4m5!3m4!1s0x89451ab5034cb7ab:0xb600ecf3df7aca4d!8m2!3d25!4d-71"> view us on googlemaps </a>
+    </div>
+</div>
+</body>

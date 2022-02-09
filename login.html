@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the employees webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Employees">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    <script src="https://kit.fontawesome.com/404576dba9.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <script>
+
+    </script>
+</head>
+    <body>
+        <div>
+            <header>
+                <!-- Navigation bar-->
+                
+    <nav>
+	<a href="index.html"><i class="fas fa-dungeon"></i>Home</a>
+	<select>
+		<option value ="English">English</option>
+		<option value ="Malay">Malay</option>
+		<option value ="Chinese">Chinese</option>
+		<option value ="Tamil">Tamil</option>
+	</select>
+    <!--Search Bar-->
+
+    
+
+	<input type="text" name="">
+	<button><i class="fas fa-search"></i></button>
+	 <a href="attractions.html"><i class="fas fa-dharmachakra"></i>ATTRACTIONS</a>
+	<a href="shopping.html"><i class="fas fa-gift"></i>SHOPPING</a>
+	<a href="dining.html"><i class="fas fa-utensils"></i>DINING</a>
+    <a href="login.html"><i class="fas fa-user-friends"></i>EMPLOYEE'S PAGE</a>
+	<a href="booking%20page.html"><i class="fas fa-ticket-alt"></i>BOOKING</a>
+ 
+</nav>
+
+                   
+            </header>
+        </div>
+        <div style="margin-top: 50px;">
+            <br>
+            <!--Login form-->
+            <form name="login" action="" method="POST" id="form" onsubmit="redirect();return false";>
+                <center>Username:</center>
+                <center><input name="username" size="20" id="username" required/></center>
+                <br>
+                <center>Password:</center>
+                <center><input name="password" size="20" id="password" required/></center>
+                <br>
+<!--                onclick="window.location.href ='Employee.html'"-->
+                <center><button type="submit" value="Login"/>Login</button></center>
+            </form>
+            <br>
+        </div>
+        <div>
+            <p>
+                <footer>
+                    <div id="socials">   
+                    <h4>Stay Connected</h4>
+                        <!--Social Media-->
+                        <a href=""><img src="Images/Twitter-featured.png" width="30" height="30"></a>
+                        <a href=""><img src="Images/fb%20icon2.jpg" width="30" height="30"></a>
+                        <a href=""><img src="Images/Instagram_AppIcon.png" width="30" height="30"></a>
+                    </div>
+                    <div id="address">
+                        <!--Address-->
+                        <address>Test address</address>
+                    </div>
+                </footer>
+            </p>
+        </div>
+    </body>
+    <script>
+        function redirect()
+        {
+            window.location.href = "Employee.html";
+           
+        }
+    </script>
+</html>
